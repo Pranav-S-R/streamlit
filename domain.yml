@@ -1,0 +1,37 @@
+version: "3.1"
+
+intents:
+  - search
+  - open
+  - weather
+
+entities:
+  - search_query
+  - app_name
+  - location
+
+responses:
+
+  utter_search:
+    - text: "Sure, I'll search for [search_query] now."
+    - text: "Searching the web for [search_query]..."
+    - text: "Looking up information about [search_query]."
+
+  utter_open:
+    - text: "Opening [app_name]..."
+    - text: "Launching [app_name] for you..."
+    - text: "Starting [app_name]..."
+
+  utter_weather:
+    - text: "The weather in [location] is [weather_condition] with a temperature of [temperature]°C."
+    - text: "Here's the weather forecast for [location]: [weather_condition] with a temperature of [temperature]°C."
+
+
+actions:
+  - utter_search
+  - utter_open
+  - utter_weather
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
