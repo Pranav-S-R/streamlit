@@ -1,0 +1,20 @@
+version: "3.1"
+nlu:
+- intent: search
+  examples: |
+    - search for [Python](search_query)
+    - Find information about [Modi Ji](search_query)
+    - Look up for [latest news](search_query)
+    - Find me articles on [Artificial Inteligence](search_query)
+- intent: open
+  examples: |
+    - Open [notepad](app_name)
+    - Launch [calculator](app_name)
+    - Start [Chrome](app_name)
+    - Open [file explorer](app_name)
+    - Run [Visual Studio Code](app_name)
+- intent: weather
+  examples: |
+    - What's the weather like in [Ranipet](location)?
+    - What's the weather in [India](location)?
+    - Tell me the weather in [Chennai](location)

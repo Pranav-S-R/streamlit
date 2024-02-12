@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-app_name",
+      "2": "I-app_name",
+      "3": "L-app_name",
+      "4": "U-app_name",
+      "5": "B-location",
+      "6": "I-location",
+      "7": "L-location",
+      "8": "U-location",
+      "9": "B-search_query",
+      "10": "I-search_query",
+      "11": "L-search_query",
+      "12": "U-search_query",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-app_name": 1,
+      "I-app_name": 2,
+      "L-app_name": 3,
+      "U-app_name": 4,
+      "B-location": 5,
+      "I-location": 6,
+      "L-location": 7,
+      "U-location": 8,
+      "B-search_query": 9,
+      "I-search_query": 10,
+      "L-search_query": 11,
+      "U-search_query": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

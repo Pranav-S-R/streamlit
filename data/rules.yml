@@ -1,0 +1,18 @@
+version: "3.1"
+
+rules:
+- rule: Handle "search" intent
+  steps:
+    - intent: search
+    - action: utter_search
+
+- rule: Handle "open" intent
+  steps:
+    - intent: open
+    - action: utter_open
+
+- rule: Handle "weather" intent
+  steps:
+    - intent: weather
+    - action: utter_weather
+

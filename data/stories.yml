@@ -1,0 +1,25 @@
+version: "3.1"
+
+stories:
+- story: User Searches for Information
+  steps:
+    - intent: search
+      entities:
+        - search_query: "programming languages"
+    - action: utter_search
+
+- story: User Opens an Application
+  steps:
+    - intent: open
+      entities:
+        - app_name: "notepad"
+    - action: utter_open
+
+- story: User Asks for Weather Information
+  steps:
+    - intent: weather
+      entities:
+        - location: "New York"
+    - action: utter_weather
+
+
